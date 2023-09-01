@@ -39,15 +39,20 @@
         .auto-style10 {
             text-align: left;
         }
+        .auto-style11 {
+            width: 100%;
+            height: 151px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="auto-style8">
             <strong>
+            <asp:Image ID="Image1" runat="server" Width="16px" />
             <asp:Label ID="Label1" runat="server" CssClass="auto-style7" Text="Fix-IT Maintenance Management System"></asp:Label>
             </strong>
-            <table style="width:100%;">
+            <table class="auto-style11">
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">&nbsp;</td>
@@ -58,19 +63,20 @@
                     <td class="auto-style5">
                         <asp:Panel ID="Panel1" runat="server">
                         </asp:Panel>
-                        <asp:Label ID="Label2" runat="server" Text="Username :"></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Username :" Font-Bold="True" Font-Size="Medium"></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+                        <asp:Label ID="lblUsernamemessage" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style4">
-                        <asp:Label ID="Label3" runat="server" Text="Password : "></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Password : " Font-Bold="True" Font-Size="Medium"></asp:Label>
                     </td>
                     <td class="auto-style10">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -80,18 +86,21 @@
                 </tr>
                 <tr>
                     <td class="auto-style3"></td>
-                    <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button2" runat="server" Height="24px" Text="Back" Width="61px" />
+                    <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button2" runat="server" Height="24px" Text="Back" Width="61px" Font-Bold="True" Font-Italic="True" BackColor="Red" PostBackUrl="~/Homepage.aspx" />
                     </td>
                     <td class="auto-style9">
-                        <asp:Button ID="Button1" runat="server" Text="LogIn" Width="68px" />
+                        <asp:Button ID="Button1" runat="server" Text="LogIn" Width="68px" Font-Bold="True" Font-Italic="True" BackColor="#00CC00" OnClick="Button1_Click" />
                     </td>
                 </tr>
             </table>
+        </div>
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
                     <td class="auto-style10">
-                        <asp:LinkButton ID="LinkButton1" runat="server" BackColor="White">Forgot Password</asp:LinkButton>
+
+                        <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
+
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -106,7 +115,6 @@
                     <td>&nbsp;</td>
                 </tr>
             </table>
-        </div>
     </form>
 </body>
 </html>

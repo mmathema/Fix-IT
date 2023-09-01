@@ -68,11 +68,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDashboard.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="App_Data\MainDB.mdf" />
+    <Content Include="App_Data\MainDB_log.ldf">
+      <DependentUpon>MainDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="BookingsAssign.aspx" />
+    <Content Include="ContractorDashBoard.aspx" />
+    <Content Include="ContractorLogin.aspx" />
+    <Content Include="ContractorsDetails.aspx" />
+    <Content Include="CustomerDashboard.aspx" />
+    <Content Include="CustomersDetails.aspx" />
+    <Content Include="CustomerSignUp.aspx" />
+    <Content Include="ForgotpasswordDashboard.aspx" />
+    <Content Include="HelpForm.aspx" />
     <Content Include="Homepage.aspx" />
     <Content Include="LogInDashboard.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="stock-photo-partial-view-hands-lock-carpentry.jpeg" />
     <Content Include="Untitled.jpeg" />
     <Content Include="Web.config" />
+    <Content Include="worker.jpg" />
+    <Content Include="WorkOrder.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminDashboard.aspx.cs">
@@ -81,6 +98,76 @@
     </Compile>
     <Compile Include="AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingsAssign.aspx.cs">
+      <DependentUpon>BookingsAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingsAssign.aspx.designer.cs">
+      <DependentUpon>BookingsAssign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContractorDashBoard.aspx.cs">
+      <DependentUpon>ContractorDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractorDashBoard.aspx.designer.cs">
+      <DependentUpon>ContractorDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContractorLogin.aspx.cs">
+      <DependentUpon>ContractorLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractorLogin.aspx.designer.cs">
+      <DependentUpon>ContractorLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContractorsDetails.aspx.cs">
+      <DependentUpon>ContractorsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContractorsDetails.aspx.designer.cs">
+      <DependentUpon>ContractorsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.aspx.cs">
+      <DependentUpon>CustomerDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.aspx.designer.cs">
+      <DependentUpon>CustomerDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersDetails.aspx.cs">
+      <DependentUpon>CustomersDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomersDetails.aspx.designer.cs">
+      <DependentUpon>CustomersDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSignUp.aspx.cs">
+      <DependentUpon>CustomerSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSignUp.aspx.designer.cs">
+      <DependentUpon>CustomerSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotpasswordDashboard.aspx.cs">
+      <DependentUpon>ForgotpasswordDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotpasswordDashboard.aspx.designer.cs">
+      <DependentUpon>ForgotpasswordDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.aspx.cs">
+      <DependentUpon>HelpForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpForm.aspx.designer.cs">
+      <DependentUpon>HelpForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
@@ -97,6 +184,20 @@
       <DependentUpon>LogInDashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkOrder.aspx.cs">
+      <DependentUpon>WorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkOrder.aspx.designer.cs">
+      <DependentUpon>WorkOrder.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
